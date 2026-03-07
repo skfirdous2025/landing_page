@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Commerce</title>
+        <link rel="stylesheet" href="project1.css" />
+
+        <!-- Google fonts imports -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        /> -->
+        <!-- Google fonts import -->
+
+        <!-- Remix icon import -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <!-- Remix icon import -->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="#" class="title">E-Commerce</a>
+
+                <div class="search-container">
+                    <select
+                        name="categories"
+                        id="categories"
+                        class="select-opt"
+                    >
+                        <option value="all">All categories</option>
+                        <option value="fashion">fashions</option>
+                        <option value="all">All categories</option>
+                    </select>
+                    <input
+                        class="search-box"
+                        type="text"
+                        name="search"
+                        placeholder="Search anything you want..."
+                    />
+                    <button class="btn">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+
+                <div class="btn-containers">
+                    <button class="btn btn-primary">Help</button>
+
+                    <a href="/profile" class="btn btn-none">
+                        <i class="ri-user-line"></i>
+                        <span>Account</span>
+                    </a>
+
+                    <a href="/profile" class="btn btn-none">
+                        <div class="badge">
+                            <i class="ri-shopping-bag-line"></i>
+                        </div>
+                        <span>Shopping</span>
+                    </a>
+                </div>
+            </nav>
+            <nav class="nav2">
+                <a href="#" class="nav2_row">Jewelry & Accessories</a>
+                <a href="#" class="nav2_row">Clothing & Shoes</a>
+                <a href="#" class="nav2_row">Home & Living</a>
+                <a href="#" class="nav2_row" id="show_link">Wedding & Party</a>
+                <a href="#" class="nav2_row">Toys & Entertainment</a>
+                <a href="#" class="nav2_row">Art & Collectibles</a>
+                <a href="#" class="nav2_row">Craft Supplies & Tools</a>
+            </nav>
+        </header>
+        <main>
+            <div class="row1">
+                <div class="div1" id="div1_pic1">Clothing & Shoes</div>
+                <div class="div1" id="div1_pic2">Home & Living</div>
+                <div class="div1" id="div1_pic3">Art & Collectibles</div>
+            </div>
+            <div class="row2"> 
+                <div class="div2" id="div2_pic1">
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items1_div2">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items1_colors1"></div>
+                            <div class="items1_colors" id="items1_colors2"></div>
+                            <div class="items1_colors" id="items1_colors3"></div>
+                            <div class="items1_colors" id="items1_colors4"></div>
+                            <div class="items1_colors" id="items1_colors5"></div>
+                            <div class="items1_colors" id="items1_colors6"></div>
+                            <div class="items1_colors" id="items1_colors7"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>Vonna Neva Walnut Sandalye Chair</p>
+                        <p>195,13 $</p>
+                    </div>
+                </div>
+                <div class="div2" id="div2_pic2"> <!--2nd div-->
+                    <div class="heart"><i class="ri-heart-line"></i></div>  
+                    <div class="items2_div2">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items2_colors1"></div>
+                            <div class="items1_colors" id="items2_colors2"></div>
+                            <div class="items1_colors" id="items2_colors3"></div>
+                            <div class="items1_colors" id="items2_colors4"></div>
+                            <div class="items1_colors" id="items2_colors5"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>Wood lamp, Floor Lamp, Lambader, Decorative</p>
+                        <p>458,43 $</p>
+                    </div>
+                </div>
+                <div class="div2" id="div2_pic3">  <!--3rd div-->
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items3_div2">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items3_colors1"></div>
+                            <div class="items1_colors" id="items3_colors2"></div>
+                            <div class="items1_colors" id="items3_colors3"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple</p>
+                        <p>789,67 $</p>
+                    </div>
+                </div>
+                <div class="div2" id="div2_pic4"> <!--4th div-->
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items4_div2">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items4_colors1"></div>
+                            <div class="items1_colors" id="items4_colors2"></div>
+                            <div class="items1_colors" id="items4_colors3"></div>
+                            <div class="items1_colors" id="items4_colors4"></div>
+                            <div class="items1_colors" id="items4_colors5"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>Lace Punch Needle Pillow Covers with invisible zipper, 16*16 inches</p>
+                        <p>43,23 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="div3">
+                    <div class="left">
+                        <h3 class="h3-text">A community<br>doing good</h3>
+                        <p>Commerce is a global online marketplace, where people.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./pictures/div3.1.png" class="round_image">
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="left">
+                        <h3 class="h3-text">Support independent creators</h3>
+                        <p>Just millions of people selling the things they love.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./pictures/div3.2.png" class="round_image">
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="left">
+                        <h3 class="h3-text">Peace of mind</h3>
+                        <p>Privacy is the highest priority of our dedicated team.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./pictures/div3.3.png" class="round_image">
+                    </div>
+                </div>
+            </div>
+            <div class="row4">
+                <p style="color:#3E3E3E">Find things you'll love. Support independent sellers.<p>
+                <p style="color:#9A9A9A">Only on polka.</p>
+            </div>
+            <div class="row5">
+                <div class="arrow"><i class="ri-arrow-left-s-line"></i></div>
+                <div class="products">
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.1.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Craft Kits</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.2.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Throw Pillows</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.3.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Natural Glass</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.4.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Self-care</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.5.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Gift Ideas</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.6.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Wall Decor</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.7.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Wedding</p>
+                    </div>
+                    <div class="each-products">
+                        <div class="img8">
+                            <img src="./pictures/div4.8.png" width="90%" height="90%" class="img-des">
+                        </div>
+                        <p>Life Style</p>
+                    </div>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="row6">
+                <p>Discover unique hand-picked items</p>
+                <div class="view">
+                    view all <i class="ri-arrow-right-line"></i>
+                </div>
+            </div>
+            <div class="row7">
+                <div class="arrow"><i class="ri-arrow-left-s-line"></i></div>
+                <div class="items-section">
+                    <div class="items">
+                        <div class="inner-items" id="inner-items1">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Distressed Tote Leather Bag Leather Bag</p>
+                            <p class="prices1">216,27 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items2">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Womens Cognac Leather Elastic Straps</p>
+                            <p class="prices1">195,13 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items3">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Distressed Tote Leather Bag Leather Bag</p>
+                            <p class="prices1">910,76 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items4">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>High Top Canvas Shoes</p>
+                            <p class="prices1">341,02 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items5">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Rose Gold Moissanite Vintage Wedding Ring Set</p>
+                            <p class="prices1">3.344,13 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items6">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Blue Topaz Bangle 24K Gold Plated Handmade</p>
+                            <p class="prices1">789,09 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="row8">
+                <div class="selection">Modern Farmhouse</div>
+                <div class="selection">Eclectic Decor</div>
+                <div class="selection">Polka Boho Decor</div>
+                <div class="selection" id="minimalist">Minimalist Style</div>
+                <div class="selection">Anniversary Gift</div>
+                <div class="selection">Wedding Gifts</div>
+            </div>
+            <div class="row9">
+                <div class="normal-div"><img src="./pictures/div6.1.jpg" height="100%" width="100%" id="normal"></div>
+                <div class="normal-div div2" id="div9-color2">
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items9_div1">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items9_colors1"></div>
+                            <div class="items1_colors" id="items9_colors2"></div>
+                            <div class="items1_colors" id="items9_colors3"></div>
+                            <div class="items1_colors" id="items9_colors4"></div>
+                            <div class="items1_colors" id="items9_colors5"></div>
+                            <div class="items1_colors" id="items9_colors6"></div>
+                            <div class="items1_colors" id="items9_colors7"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                        <p>195,13 $</p>
+                    </div>
+                </div>
+                <div class="normal-div div2" id="div9-color3">
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items9_div2">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items9_colors8"></div>
+                            <div class="items1_colors" id="items9_colors9"></div>
+                            <div class="items1_colors" id="items9_colors10"></div>
+                            <div class="items1_colors" id="items9_colors11"></div>
+                            <div class="items1_colors" id="items9_colors12"></div>
+                        </div>
+                    </div>
+                    <div class="just-text" id="iphone">
+                        <p>Iphone 12 128 GB (Red) Apple </p>
+                        <p>458,43 $</p>
+                    </div>
+                </div>
+                <div class="normal-div div2" id="div9-color4">
+                    <div class="heart"><i class="ri-heart-line"></i></div>
+                    <div class="items9_div3">
+                        <p class="colors">Colors</p><br>
+                        <div class="colors1_div">
+                            <div class="items1_colors" id="items9_colors13"></div>
+                            <div class="items1_colors" id="items9_colors14"></div>
+                            <div class="items1_colors" id="items9_colors15"></div>
+                        </div>
+                    </div>
+                    <div class="just-text">
+                        <p>Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
+                        <p>789,67 $</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row7">
+                <div class="arrow"><i class="ri-arrow-left-s-line"></i></div>
+                <div class="items-section">
+                    <div class="items">
+                        <div class="inner-items" id="inner-items1">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Distressed Tote Leather Bag Leather Bag</p>
+                            <p class="prices1">216,27 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items2">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Womens Cognac Leather Elastic Straps</p>
+                            <p class="prices1">195,13 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items3">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Distressed Tote Leather Bag Leather Bag</p>
+                            <p class="prices1">910,76 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items4">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>High Top Canvas Shoes</p>
+                            <p class="prices1">341,02 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items5">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Rose Gold Moissanite Vintage Wedding Ring Set</p>
+                            <p class="prices1">3.344,13 $</p>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="inner-items" id="inner-items6">
+                            <div class="heart2"><i class="ri-heart-line"></i></div>
+                        </div>
+                        <div class="inner-text">
+                            <p>Blue Topaz Bangle 24K Gold Plated Handmade</p>
+                            <p class="prices1">789,09 $</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+            <div class="contact">
+                <div class="about">
+                    <p>Yes!</p>
+                    <p>Send me exclusive offers, unique gift ideas, and personalized
+                       tips for shopping and selling on Commerce.</p>
+                </div>
+                <div class="mail">
+                    <div class="type">
+                        <input type="text" placeholder="Drop your Email">
+                        <button id="subscribe">Subscribe <i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+                <p style="color:#FFFFFF">First order only. You’re ready?</p>
+            </div>
+        </main>
+        <div class="separator">
+            <p>Commerce, is powered by 100% renewable electricity.</p>
+        </div>
+        <footer>
+            <div class="description">
+                <div class="last-left">
+                    <a href="#" class="title" style="font-size: 1rem;">E-Commerce</a>
+                    <p>Cricklewood,London<br>NW2 6qg, Uk</p>
+                </div>
+                <div class="last-right">
+                    <div class="desc">
+                        <h5 class="last-head">Shop</h5>
+                        <div class="data">
+                            <a href="#" class="last-links">Gift cards</a>
+                            <a href="#" class="last-links">Site map</a>
+                            <a href="#" class="last-links">Polka blog</a>
+                            <a href="#" class="last-links">Login</a>
+                            <a href="#" class="last-links">Sign in</a>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h5 class="last-head">Sell</h5>
+                        <div class="data">
+                            <a href="#" class="last-links">Sell on Polka</a>
+                            <a href="#" class="last-links">Teams</a>
+                            <a href="#" class="last-links">Forums</a>
+                            <a href="#" class="last-links">Affiliates</a>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h5 class="last-head">About</h5>
+                        <div class="data">
+                            <a href="#" class="last-links">Polka, Inc.</a>
+                            <a href="#" class="last-links">Policies</a>
+                            <a href="#" class="last-links">Investors</a>
+                            <a href="#" class="last-links">Careers</a>
+                            <a href="#" class="last-links">Press</a>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <h5 class="last-head">Help</h5>
+                        <div class="data">
+                            <a href="#" class="last-links">Help Center</a>
+                            <a href="#" class="last-links">Trust and safety</a>
+                            <a href="#" class="last-links">Privacy settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-row">
+                <p>© 2022 Commerce, Inc.</p>
+                <div class="last-div">
+                    <a href="#">Privacy policy</a>
+                    <a href="#" class="last-color">Terms of use</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <p>Scroll to top <i class="ri-arrow-up-line"></i></p>
+            </div>
+        </footer>
+    </body>
+</html
